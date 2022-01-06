@@ -27,8 +27,12 @@ function addListAfterClick(){
       }
 }
 
+/**
+ * 
+ * @param {KeyboardEvent} event 
+ */
 function addListAfterKeypress(event){
-   if (inputLenght() > 0 && event.keyCode == 13) {
+   if (inputLenght() > 0 && event.keycode === 13) {
       createListItem();
    }
 }
